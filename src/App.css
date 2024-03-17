@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.quote-para::before {
+  content: "";
+  position: absolute;
+  background: url("../public/left_quote.png");
+  background-repeat: no-repeat;
+  top: 10%;
+  left: 0%;
+  width: 70px;
+  height: 70px;
+}
+
+.quote-para::after {
+  content: "";
+  position: absolute;
+  background: url("../public/right_quote.png");
+  background-repeat: no-repeat;
+  right: 18%;
+  width: 70px;
+  height: 70px;
+  bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-para::before {
+    left: -9%;
+    
+  }
+
+  .quote-para::after {
+    right: -13%;
+    bottom: 5%;
+  }
+}
